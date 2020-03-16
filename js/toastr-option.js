@@ -1,0 +1,11 @@
+toastr.options.progressBar = true;
+toastr.options.newestOnTop = false;
+// toastr.options.positionClass = 'toast-bottom-left'
+toastr.options.closeButton = true;
+toastr.options.showEasing = 'linear';
+toastr.options.hideEasing = 'linear';
+toastr.options.closeEasing = 'linear';
+toastr.options.showMethod = 'slideDown';
+toastr.options.hideMethod = 'slideUp';
+toastr.options.closeMethod = 'slideUp';
+toastr.options.preventDuplicates = true;
