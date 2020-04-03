@@ -1,7 +1,7 @@
 var myApp = new Vue({
     el: '#myApp',
     data: {
-        username: '',
+        username: 'ABC',
         password: ''
     },
     methods: {
@@ -9,7 +9,10 @@ var myApp = new Vue({
             return 'Username: ' + this.username;
         },
         submit: function() {
+            var css = false;
+            var user = this.username
             if (this.username == "" || this.password == "") {
+                css = true;
                 alert('Enter Username or Password')
             } else if (this.username == localStorage.getItem('email') && this.password == localStorage.getItem('password')) {
                 localStorage.setItem('username', this.username);
@@ -17,6 +20,7 @@ var myApp = new Vue({
             } else {
                 alert('Invalid Username or Password')
             }
+
         }
     }
 });
